@@ -1,0 +1,9 @@
+<h1>List of Books avaliable:</h1>
+
+<br>
+
+<% @books.each do |book| %>
+  <p>Title: <strong><%= book.title %></strong></p>
+  <p>Author: <%= book.author.name %></p><br>
+  <p><%= book.image_url %></p>
+<% end %>

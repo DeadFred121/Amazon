@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
+  get '/books', to: 'pages#books', as: :books
+
+  get '/authors', to: 'pages#authors', as: :authors
+
+
 end

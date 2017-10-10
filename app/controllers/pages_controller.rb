@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def books
-    @books = Book.all
+    @books = Book.order(rating: :desc)
   end
 
   def authors

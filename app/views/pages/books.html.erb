@@ -1,12 +1,14 @@
-<h1>List of Books avaliable:</h1>
+<div class="internal-content">
+  <h1>List of Books avaliable:</h1>
 
-<br>
+  <br>
 
-<% @books.each do |book| %>
-  <p>Title: <strong><%= book.title %></strong></p>
-  <p>Author: <%= book.author.name %></p><br>
-  <p><%= book.image_url %></p>
-  <% book.rating.times do %>
-    <%= image_tag 'https://openclipart.org/download/262404/hp_gold_star.svg', alt: 'star' %>
+  <% @books.each do |book| %>
+    <p>Title: <strong><%= book.title %></strong></p>
+    <p>Author: <%= book.author.name %></p><br>
+    <p><%= book.image_url %></p>
+    <% book.rating.times do %>
+      <%= image_tag 'https://openclipart.org/download/262404/hp_gold_star.svg', alt: 'star', class: 'star-image' %>
+    <% end %>
   <% end %>
-<% end %>
+</div>

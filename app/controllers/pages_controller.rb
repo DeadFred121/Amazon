@@ -13,6 +13,7 @@ class PagesController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
+    @book.increment!(:views, 1)
   end
 
 end

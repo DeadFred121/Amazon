@@ -8,7 +8,7 @@
     <p>Books: </p>
     <% author.books.each do |book| %>
       <%= book.title %><br>
-      <p><%= image_tag (book.image_url), class: 'cover_img' alt: 'best book online, books cheap best book' %></p>
+      <p><%=image_tag (book.image_url), class: 'cover_img', alt: 'best book online, books cheap best book' %></p>
       <%= link_to 'Details', book_path(book) %><br><br>
     <% end %>
   <% end %>

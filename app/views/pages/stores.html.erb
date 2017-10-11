@@ -1,0 +1,10 @@
+<div class="internal-content">
+  <h1>List of Stores now avaliable:</h1>
+
+  <br>
+
+  <% @stores.each do |store| %>
+    <p><strong><%= store.title %></strong></p>
+    <p>Address: <%= store.monkey_address %></p>
+  <% end %>
+</div>

@@ -16,4 +16,8 @@ class PagesController < ApplicationController
     @book.increment!(:views, 1)
   end
 
+  def stores
+    @stores = Store.all
+  end
+
 end

@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   get '/show/:id', to: 'pages#show', as: :book
 
+  get '/stores', to: 'pages#stores'
 
 end

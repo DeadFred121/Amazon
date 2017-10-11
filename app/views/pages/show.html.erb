@@ -1,7 +1,7 @@
 <div class="internal-content">
     <p>Title: <strong><%= @book.title %></strong></p>
     <p>Author: <%= @book.author.name %></p>
-    <p>Views: <%= @book.views %></p>
+    <p>This book has been viewed <%= @book.views %> time(s)</p>
     <% @book.rating.times do %>
       <%= image_tag 'https://openclipart.org/download/262404/hp_gold_star.svg', alt: 'star', class: 'star-image' %>
     <% end %>

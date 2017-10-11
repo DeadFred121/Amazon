@@ -9,4 +9,10 @@
     <%= link_to 'More Details', store_path(store) %>
     <hr>
   <% end %>
+
+  <%= simple_form_for :store, url: '/stores' do |f| %>
+  <%= f.input :address, as: :string %>
+  <%= f.button :submit %>
+  <% end %>
+
 </div>

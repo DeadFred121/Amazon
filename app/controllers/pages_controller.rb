@@ -21,7 +21,11 @@ class PagesController < ApplicationController
   end
 
   def stores
-    @stores = Store.all
+    if request.post?
+      @stores = Store.near(params[:store][:address], 50)
+    else
+      @stores = Store.all
+    end
   end
 
 end

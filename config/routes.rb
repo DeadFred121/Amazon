@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   get '/stores', to: 'pages#stores'
 
+  get '/stores/:id', to: 'pages#show_store', as: :store
+
 end

@@ -16,6 +16,10 @@ class PagesController < ApplicationController
     @book.increment!(:views, 1)
   end
 
+  def show_store
+    @store = Store.find(params[:id])
+  end
+
   def stores
     @stores = Store.all
   end

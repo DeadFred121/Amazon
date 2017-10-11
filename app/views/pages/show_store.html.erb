@@ -1,0 +1,5 @@
+<div class="internal-content">
+    <p><strong><%= @store.title %></strong></p>
+    <p>Address: <%= @store.address %></p>
+    <%= link_to 'Back', request.referer.present? ? request.referer : default_path %>
+</div>

@@ -6,5 +6,6 @@
   <% @stores.each do |store| %>
     <p><strong><%= store.title %></strong></p>
     <p>Address: <%= store.monkey_address %></p>
+    <%= link_to 'More Details', store_path(store) %>
   <% end %>
 </div>

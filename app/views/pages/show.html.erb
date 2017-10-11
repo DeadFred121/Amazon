@@ -1,0 +1,9 @@
+<div class="internal-content">
+    <p>Title: <strong><%= @book.title %></strong></p>
+    <p>Author: <%= @book.author.name %></p>
+    <% @book.rating.times do %>
+      <%= image_tag 'https://openclipart.org/download/262404/hp_gold_star.svg', alt: 'star', class: 'star-image' %>
+    <% end %>
+    <p><%=image_tag (@book.image_url), class: 'cover_img',  alt: 'best book online, books cheap best book' %></p>
+    <%= link_to 'Back', request.referer.present? ? request.referer : default_path %>
+</div>

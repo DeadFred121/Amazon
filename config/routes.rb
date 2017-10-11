@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   get '/authors', to: 'pages#authors', as: :authors
 
+  get '/show/:id', to: 'pages#show', as: :book
+
 
 end

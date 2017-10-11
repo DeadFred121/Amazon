@@ -9,6 +9,7 @@
     <% book.rating.times do %>
       <%= image_tag 'https://openclipart.org/download/262404/hp_gold_star.svg', alt: 'star', class: 'star-image' %>
     <% end %>
-    <p><%=image_tag (book.image_url), class: 'cover_img' %></p><br><br>
+    <p><%=image_tag (book.image_url), class: 'cover_img', alt: 'best book online, books cheap best book' %></p>
+    <%= link_to 'Details', book_path(book) %><br><br>
   <% end %>
 </div>

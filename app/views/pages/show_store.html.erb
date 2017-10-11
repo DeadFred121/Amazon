@@ -1,5 +1,11 @@
 <div class="internal-content">
     <p><strong><%= @store.title %></strong></p>
     <p>Address: <%= @store.address %></p>
+    <iframe
+      width="600"
+      height="450"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAB8kV99CA0TUOvm_lJu3vVWHKmU_cMoDU&q=<%= @store.monkey_address %>" allowfullscreen>
+    </iframe><br>
     <%= link_to 'Back', request.referer.present? ? request.referer : default_path %>
 </div>
